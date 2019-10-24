@@ -11,12 +11,6 @@ const windowSelector = document.querySelector("body");
 const windowHeight = parseInt(getComputedStyle(windowSelector).height);
 
 
-// document.addEventListener("scroll", (e) => {
-//     // console.log(e);
-//     console.log(window.pageYOffset);
-// });
-
-
 document.addEventListener("scroll", () => {
     if (window.pageYOffset > 50) {
         navBar.classList.replace("navigation", "navigation-fixed");
