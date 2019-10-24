@@ -1,6 +1,6 @@
 .about {
     background-color: #e9e9e9;
-    background-image: linear-gradient(rgba($black, .75), rgba($black, .75)), url(/img/about-background-right.jpg), url(/img/about-background-left.png);
+    background-image: linear-gradient(rgba($black, .75), rgba($black, .75)), url(img/about-background-right.jpg), url(img/about-background-left.png);
     background-repeat: no-repeat;
     background-position: 100%, 100%, 25%;
     background-size: 70%, 70% 170%, 20%;
@@ -10,7 +10,7 @@
         background-size: 86%, 86% 170%, 25%;
     }
     @include respond(tab-port) {
-        background-image: linear-gradient(rgba($black, .75), rgba($black, .75)), url(/img/about-background-right.jpg);
+        background-image: linear-gradient(rgba($black, .75), rgba($black, .75)), url(img/about-background-right.jpg);
         background-size: cover;
     }
 
