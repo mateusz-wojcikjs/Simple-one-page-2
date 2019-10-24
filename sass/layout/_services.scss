@@ -1,0 +1,45 @@
+.services {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__text-box {
+        margin-bottom: 9rem;
+
+        @include respond(phone) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        min-height: 35vh;
+        margin: 10rem 0;
+        text-align: center;
+    }
+}
+
+.service-block {
+    max-width: 60rem;
+    flex: 1;
+
+    @include respond(phone) {
+        margin-top: 2.5rem;
+    }
+
+    &:not(:last-child) {
+        margin-right: 2.5rem;
+    }
+
+    &__title {
+        margin: 2rem 0;
+    }
+}

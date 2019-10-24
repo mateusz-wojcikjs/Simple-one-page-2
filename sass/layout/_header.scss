@@ -1,0 +1,21 @@
+.header{
+    overflow: hidden;
+    background: linear-gradient(rgba($black, .75), rgba($black, .75)), url(img/header-background.jpg) no-repeat bottom/cover ;
+    &__container{
+        color: $white;
+        min-height: 50vh;
+        margin: 10rem 0;
+        display: flex;
+        flex-direction: column;
+        flex: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__text-box{
+        max-width: 60rem;
+        margin-bottom: 6rem;
+        transition: all .5s cubic-bezier(.26,.88,.09,.95);    
+    }
+}
+

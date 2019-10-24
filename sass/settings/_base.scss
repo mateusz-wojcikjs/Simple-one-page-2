@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 55%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    //overflow: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.active-link {
+    border-bottom: 3px solid $color-secondary;
+    transition: all 100ms;
+}
+.scrolling-box {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+

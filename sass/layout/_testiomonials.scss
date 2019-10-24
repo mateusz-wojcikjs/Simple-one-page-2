@@ -1,0 +1,235 @@
+.testimonials {
+    background-color: #fff;
+
+    &__text-box {
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        min-height: 35vh;
+        margin: 10rem 0;
+    }
+
+    &__refrence {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:nth-child(even) {
+            margin: 5rem 0;
+        }
+    }
+}
+
+.reference-photo {
+    min-width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background-color: $grey-light-1;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 1px $grey-light;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        padding: 0.4rem;
+        @include respond(phone) {
+            max-width: 220px;
+        }
+    }
+
+    &:first-child {
+        margin-right: 2.5rem;
+    }
+}
+
+.quote {
+    background-color: $grey-light-2;
+    padding: 5rem;
+    z-index: 3;
+    position: relative;
+    min-height: 22rem;
+    font-family: 'Roboto Slab', serif;
+    max-width: 80rem;
+
+    @include respond(tab-port) {
+        padding: 3.5rem;
+        min-height: 18rem;
+    }
+    @include respond(phone) {
+        order: 1;
+        margin-top: 5rem;
+    }
+
+    &__container {
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__author {
+        color: $color-secondary;
+        font-size: 2rem;
+        margin: 1.5rem auto 0;
+        display: block;
+        text-align: center;
+
+        &::before {
+            content: "-";
+            margin-right: 1rem;
+        }
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        color: $grey-mid;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+    }
+
+    &:first-child {
+        margin-right: 2.5rem;
+    }
+}
+
+[class|="vector"] {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: $grey-light-2;
+    transform: rotate(45deg) skew(192deg, 10deg);
+    z-index: -1;
+    top: 65px;
+
+    @include respond(tab-port) {
+        width: 90px;
+        height: 90px;
+        top: 33px;
+    }
+    @include respond(phone) {
+        top: 10px;
+    }
+
+}
+
+.vector-right {
+    right: -10px;
+
+    @include respond(phone) {
+        right: 38%;
+    }
+}
+
+.vector-left {
+    left: -10px;
+
+    @include respond(phone) {
+        left: 39%;
+    }
+}
+
+
+
+.cta {
+    background-color: $color-secondary;
+
+    &__container {
+        min-height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.cta .btn {
+    border: 3px solid $white;
+    margin-top: 1.5rem;
+}
+
+.brands {
+    background-color: $white;
+
+    &__container {
+        min-height: 20vh;
+        max-width: 100rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+}
+
+.footer {
+    background-color: $grey-dark-1;
+    color: $white;
+
+    &__container {
+        padding: 2.5rem 0;
+        min-height: 20vh;
+        display: flex;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__column {
+        flex: 1 0 30%;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+
+    }
+
+    &__item-label {
+        font-size: 2rem;
+        color: $grey-light;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    &__textbox {
+        max-width: 35rem;
+        margin: 5rem auto;
+    }
+
+    &__title--main {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.hashtag {
+    font-weight: bold;
+    color: $grey-mid;
+    display: block;
+}
+
+.art-date {
+    font-size: 1.5rem;
+    color: $grey-mid;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "projekt-3",
+  "version": "1.0.0",
+  "description": "Third project of weekly webdev challange.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "3"
+  },
+  "author": "Mateusz Wójcik",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {}
+}

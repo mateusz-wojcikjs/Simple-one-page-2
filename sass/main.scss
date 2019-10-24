@@ -1,0 +1,17 @@
+//@import "components/"
+@import "layout/mixins";
+@import "settings/variables";
+@import "settings/base";
+@import "settings/typography";
+
+@import "components/button";
+@import "components/icons";
+
+
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/services";
+@import "layout/about";
+@import "layout/lastest";
+@import "layout/values";
+@import "layout/testiomonials";

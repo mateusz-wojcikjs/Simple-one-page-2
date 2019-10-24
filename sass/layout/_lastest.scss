@@ -1,0 +1,60 @@
+.lastest {
+    background: $white url(img/lastest-background.jpg) no-repeat right 75%;
+
+    @include respond(tab-land) {
+        background: $white url(img/lastest-background.jpg) no-repeat 125% 230%;
+    }
+
+    @include respond(tab-port) {
+        background: $white;
+    }
+
+    &__container {
+        padding: 10rem 0rem;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        flex: 50%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__text-box {
+        margin: 0 auto;
+        text-align: center;
+        @include respond(phone) {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.text-container {
+    max-width: 60rem;
+
+
+    &__icon {
+        border: 3px solid $black;
+        border-radius: 50%;
+        padding: 1.5rem 1.6rem;
+        margin: 0 2rem 1rem 0;
+    }
+
+    &__description {
+        font-family: 'Roboto Slab', serif;
+        font-weight: lighter;
+        margin: 1rem 0;
+    }
+
+    &__item {
+        list-style: none;
+        margin: 2rem 0rem;
+
+        & li {
+            display: flex;
+            align-items: center;
+        }
+    }
+    @include respond(large-desktop) {
+        max-width: 120rem;
+    }
+}
